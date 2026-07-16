@@ -13,13 +13,25 @@ Crear algoritmo que imprima números impares
 // numImpar();
 
 // solucion 2
-function numImpar() {
-  //la clave está en el número inicial.
-  // La regla matemática dice: Impar + Par = Impar.
-  // Como sumas 2 (par) a partir del 1 (impar),
-  // el resultado siempre será impar
-  for (let i = 1; i <= 10; i += 2) {
-    console.log(i);
+
+//la clave está en el número inicial.
+// La regla matemática dice: Impar + Par = Impar.
+// Como sumas 2 (par) a partir del 1 (impar),
+// el resultado siempre será impar
+// function numImpar() {
+
+//   for (let i = 1; i <= 10; i += 2) {
+//     console.log(i);
+//   }
+// }
+// numImpar();
+
+// solucion del profesor
+
+let i = 0;
+while (i <= 10) {
+  if (i % 2 !== 0) {
+    console.log("impar", i);
   }
+  i++;
 }
-numImpar();
